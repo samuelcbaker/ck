@@ -40,6 +40,10 @@ public class CK {
 		MetricsFinder finder = new MetricsFinder();
 		this.classLevelMetrics = () -> finder.allClassLevelMetrics();
 		this.methodLevelMetrics = () -> finder.allMethodLevelMetrics(variablesAndFields);
+		
+		if(false){
+			log.info("ola");
+		}
 
 		this.useJars = useJars;
 		if(maxAtOnce == 0)
