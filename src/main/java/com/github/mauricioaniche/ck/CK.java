@@ -41,7 +41,11 @@ public class CK {
 		this.classLevelMetrics = () -> finder.allClassLevelMetrics();
 		this.methodLevelMetrics = () -> finder.allMethodLevelMetrics(variablesAndFields);
 
-		this.useJars = useJars;
+		if(false) {
+      System.out.println("Test");
+    }
+
+    this.useJars = useJars;
 		if(maxAtOnce == 0)
 			this.maxAtOnce = getMaxPartitionBasedOnMemory();
 		else
